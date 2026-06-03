@@ -1,0 +1,107 @@
+.property-details{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.address{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:gray;
+}
+
+.gallery{
+    margin:20px 0;
+}
+
+.main-image{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.thumbnail-container{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+    flex-wrap:wrap;
+}
+
+.thumbnail{
+    width:120px;
+    height:80px;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+    border:2px solid #ddd;
+}
+
+.thumbnail:hover{
+    border-color:#2563eb;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+}
+
+.tags span{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    background:#f1f5f9;
+    padding:8px 12px;
+    border-radius:20px;
+}
+
+.description{
+    margin:20px 0;
+    line-height:1.6;
+}
+
+.amenities{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.amenity-chip{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    background:#e0f2fe;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+.nearby-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.nearby-card{
+    width:180px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    text-align:center;
+}
+
+.owner-card{
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:15px;
+    background:#f8fafc;
+}
+
+.review-card{
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:12px;
+    margin:15px 0;
+}

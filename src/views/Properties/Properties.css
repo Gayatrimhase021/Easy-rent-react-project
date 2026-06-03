@@ -1,0 +1,10 @@
+.properties-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nearby-icon {
+  font-size: 24px;
+  margin-bottom: 6px;
+  color: #333;
+}

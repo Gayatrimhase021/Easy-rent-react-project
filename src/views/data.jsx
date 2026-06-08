@@ -1,3 +1,33 @@
+
+ import image1 from "../assets/image1.jpg";
+ import image2 from "../assets/image2.jpg";
+ import image3 from "../assets/image3.jpg";
+ import image4 from "../assets/image4.jpg";  
+  import image5 from "../assets/image5.jpg";
+  import image6 from "../assets/image6.jpg";
+  import image7 from "../assets/image7.jpg";
+  import image8 from "../assets/image8.jpg";
+  import image9 from "../assets/image9.jpg";
+  import image10 from "../assets/image10.jpg";
+  import image11 from "../assets/image11.jpg";
+  import image12 from "../assets/image12.jpg";
+  import image13 from "../assets/image13.jpg";
+  import image14 from "../assets/image14.jpg";
+  import image15 from "../assets/image15.jpg";
+  import image16 from "../assets/image16.jpg";
+  import image17 from "../assets/image17.jpg";
+  import image18 from "../assets/image18.jpg";
+  import image19 from "../assets/image19.jpg";
+  import image20 from "../assets/image20.jpg";
+
+
+const propertyImages = [
+  image1, image2, image3, image4, image5,
+  image6, image7, image8, image9, image10,
+  image11, image12, image13, image14, image15,
+  image16, image17, image18, image19, image20,
+];
+
 const propertyTypes = ["Apartment", "Villa", "Plot"];
 
 const cities = [
@@ -81,27 +111,12 @@ export const PROPERTIES = Array.from({ length: 200 }, (_, index) => ({
     "Power Backup",
   ],
 
-  images:
-    propertyTypes[index % 3] === "Villa"
-      ? [
-          "https://picsum.photos/800/500?random=101",
-          "https://picsum.photos/800/500?random=102",
-          "https://picsum.photos/800/500?random=103",
-          "https://picsum.photos/800/500?random=104",
-        ]
-      : propertyTypes[index % 3] === "Apartment"
-      ? [
-          "https://picsum.photos/800/500?random=201",
-          "https://picsum.photos/800/500?random=202",
-          "https://picsum.photos/800/500?random=203",
-          "https://picsum.photos/800/500?random=204",
-        ]
-      : [
-          "https://picsum.photos/800/500?random=301",
-          "https://picsum.photos/800/500?random=302",
-          "https://picsum.photos/800/500?random=303",
-          "https://picsum.photos/800/500?random=304",
-        ],
+  images: [
+    propertyImages[index % 20],
+    propertyImages[(index + 1) % 20],
+    propertyImages[(index + 2) % 20],
+    propertyImages[(index + 3) % 20],
+  ],
 
   nearbyPlaces:
     nearbyPlacesList[index % nearbyPlacesList.length],

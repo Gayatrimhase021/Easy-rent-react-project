@@ -32,8 +32,8 @@ function PropertyCard({
       <img
         src={image}
         alt={title}
-        className="property-image"
-      />
+  className="property-image"
+/>
 
       <div className="rating">
         ⭐ {rating}

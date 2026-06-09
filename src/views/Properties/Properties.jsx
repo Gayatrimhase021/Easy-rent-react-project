@@ -16,13 +16,13 @@ function Properties() {
   return (
     <div className="properties-container">
 
-      {/* Navbar */}
+  
       <Navbar />
 
       <h1>Properties</h1>
 
-      {/* Filters */}
       <div className="filters">
+
         <Input
           placeholder="Search Properties"
           value={searchTerm}
@@ -50,25 +50,34 @@ function Properties() {
           <option>Villa</option>
           <option>Plot</option>
         </select>
+
       </div>
 
-      {/* Property List */}
-      <div className="properties-list">
-        {filteredProperties.map((propertyObj) => (
+      {filteredProperties.map((propertyObj) => {
+        const {
+          id,
+          title,
+          type,
+          city,
+          price,
+          rating,
+        } = propertyObj;
+
+        return (
           <PropertyCard
-            key={propertyObj.id}
-            id={propertyObj.id}
-            title={propertyObj.title}
-            propertyType={propertyObj.type}
-            city={propertyObj.city}
-            rent={propertyObj.price}
-            rating={propertyObj.rating}
+            key={id}
+            id={id}
+            title={title}
+            propertyType={type}
+            city={city}
+            rent={price}
+            rating={rating}
             image={propertyObj.images[0]}
           />
-        ))}
-      </div>
+        );
+      })}
 
-      {/* Footer */}
+     
       <Footer />
 
     </div>

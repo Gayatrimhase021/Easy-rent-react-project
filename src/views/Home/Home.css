@@ -1,0 +1,90 @@
+.hero{
+    height:90vh;
+    background:url("https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin:20px 0;
+}
+
+.hero-content button{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.search-section{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:40px;
+}
+
+.search-section input{
+    width:400px;
+    padding:12px;
+}
+
+.featured{
+    padding:40px;
+}
+
+.property-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.why-us,
+.testimonials,
+.cta{
+    padding:50px;
+    text-align:center;
+}
+
+.feature-container,
+.testimonial-container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.feature-card,
+.testimonial-card{
+    width:300px;
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border-radius:12px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:50px;
+    background:#f8fafc;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    text-align:center;
+}
+
+.cta{
+    background:#2563eb;
+    color:white;
+}

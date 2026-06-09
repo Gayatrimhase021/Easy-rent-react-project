@@ -16,11 +16,12 @@ function Properties() {
   return (
     <div className="properties-container">
 
-    
+      {/* Navbar */}
       <Navbar />
 
-      
+      <h1>Properties</h1>
 
+      {/* Filters */}
       <div className="filters">
         <Input
           placeholder="Search Properties"
